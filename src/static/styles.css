@@ -145,12 +145,33 @@ footer {
 
 .participants-list {
   margin-top: 10px;
-  padding-left: 20px;
-  list-style-type: disc;
+  padding-left: 0;
 }
 
-.participants-list li {
-  margin-bottom: 5px;
-  color: #333;
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.participant-item span {
   font-size: 14px;
+  color: #333;
+}
+
+.delete-participant {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-participant:hover {
+  background-color: #b71c1c;
 }
